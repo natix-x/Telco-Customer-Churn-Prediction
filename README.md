@@ -20,6 +20,7 @@ Used dataset has already been prepared and has no missing values and contains 17
    - RandomForestClassifier
    - AdaBoostClassifier
    - GradientBoostingClassifier
+   
 Decision based on the fact that we are dealling with a bit imbalanced classes: 73,42 % rows in dataset have "No" in "Churn" column.
 
 ## Models evaluation
@@ -27,6 +28,10 @@ Decision based on the fact that we are dealling with a bit imbalanced classes: 7
 1. Classification report - great importance in our is attached to recall of "Yes" value as we want our model to misclassify as little as possible customers that want to stop using company's service.
 2. Display confusion matrix.
 3. Roc auc score.
+
+## Support vector classifier
+
+As being not fully satisfied with received evaluation I also chose SVM and do GridSearchCV
 
 ## Results and conclusions
 
