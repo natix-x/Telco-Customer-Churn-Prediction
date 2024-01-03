@@ -14,14 +14,14 @@ Used dataset has already been prepared and has no missing values and contains 17
 2. Make visualizations including previously specified features and "Churn" column in order to see pattern occuring in our data. 
 3. Check if we are dealing with balanced or not classes in order to help ourselves with choosing ML model.
 
-## Machine Learning Models 
+## Machine Learning Models
 
 1. Chosen ML models:
    - RandomForestClassifier
    - AdaBoostClassifier
    - GradientBoostingClassifier
    
-Decision based on the fact that we are dealling with a bit imbalanced classes: 73,42 % rows in dataset have "No" in "Churn" column.
+Decision based on the fact that we are dealing with pretty imbalanced classes: 73,42 % rows in dataset have "No" in "Churn" column.
 
 ## Models evaluation
 
@@ -31,7 +31,12 @@ Decision based on the fact that we are dealling with a bit imbalanced classes: 7
 
 ## Support vector classifier
 
-As being not fully satisfied with received evaluation I also chose SVM and do GridSearchCV
+As being not fully satisfied with received evaluation I also chose SVM and did GridSearchCV
+
+## Solve class imbalance
+
+1. Use BorderlineSMOTE as method of over-sampling in imbalanced dataset
+2. Train AdaBoostClassifier & SVM and evaluate them
 
 ## Results and conclusions
 
