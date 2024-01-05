@@ -29,14 +29,11 @@ Decision based on the fact that we are dealing with pretty imbalanced classes: 7
 2. Display confusion matrix.
 3. Roc auc score.
 
-## Support vector classifier (SVC)
-
-As being not fully satisfied with received evaluation I also chose SVC and did GridSearchCV
-
 ## Solve class imbalance
 
-1. Use BorderlineSMOTE as method of over-sampling in imbalanced dataset
-2. Train GBC & SVC and evaluate them
+1. Use ADASYN as method of dealing with class imbalance
+2. Train GBC and evaluate it.
+3. Repeat two upper actions but use BorderlineSMOTE instead
 
 ## Results and conclusions
 
