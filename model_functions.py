@@ -20,7 +20,7 @@ def evaluate(estimator, X_test, y_test):
     predictions = estimator.predict(X_test)
     cm = confusion_matrix(y_test, predictions)
     disp = ConfusionMatrixDisplay(confusion_matrix=cm)
-    disp.plot(cmap="seismic")
+    disp.plot(cmap="plasma")
     print(classification_report(y_test, predictions))
 
     def change(value):
