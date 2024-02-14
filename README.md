@@ -31,11 +31,14 @@ Decision based on the fact that we are dealing with pretty imbalanced classes: 7
 
 ## Solve class imbalance
 
-1. Use ADASYN as method of dealing with class imbalance
+1. Use ADASYN as a method of dealing with class imbalance.
 2. Train GBC and evaluate it.
-3. Repeat two upper actions but use BorderlineSMOTE instead
+3. Repeat two upper actions but use BorderlineSMOTE instead.
 
-## Results and conclusions
+## Model deployment
+
+1. Train final model on whole dataset
+2. Save model as a pickle file
 
 
 
